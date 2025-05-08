@@ -13,47 +13,36 @@ Correct Username and Password
 
 Incorrect Username and CorrectPassword
     Enter Credentials    sadikshya    secret_sauce
-    Wait Until Element Is Visible    ${LOCATOR_ERROR_MESSAGE}   timeout=10s
-#    ${error}= Get Text  &{LOCATOR_ERROR_MESSAGE}
-#    Should Contain    ${error}
-    Element Text Should Be    ${LOCATOR_ERROR_MESSAGE}   Epic sadface: Username and password do not match any user in this service
+    Error Message Should Be Displayed   ${expected_message}
 
 Correct Username and Incorrect Password
     Enter Credentials    standard_user   sadikshya
-    Wait Until Element Is Visible    ${LOCATOR_ERROR_MESSAGE}   timeout=5s
-    Element Text Should Be    ${LOCATOR_ERROR_MESSAGE}   Epic sadface: Username and password do not match any user in this service
+    Error Message Should Be Displayed    ${expected_message}
 
 Incorrect Username and Incorrect Password
     Enter Credentials    sadikshya   sadikshya
-    Wait Until Element Is Visible    ${LOCATOR_ERROR_MESSAGE}   timeout=5s
-    Element Text Should Be    ${LOCATOR_ERROR_MESSAGE}   Epic sadface: Username and password do not match any user in this service
+    Error Message Should Be Displayed   ${expected_message}
 
 Empty Username and Password
     Enter Credentials   ""    ""
-    Wait Until Element Is Visible    ${LOCATOR_ERROR_MESSAGE}   timeout=5s
-    Element Text Should Be    ${LOCATOR_ERROR_MESSAGE}   Epic sadface: Username and password do not match any user in this service
+    Error Message Should Be Displayed   ${expected_message}
 
 Username With Different Case And Correct Password
     Enter Credentials    STANDARD_USER    secret_sauce
-    Wait Until Element Is Visible    ${LOCATOR_ERROR_MESSAGE}   timeout=5s
-    Element Text Should Be    ${LOCATOR_ERROR_MESSAGE}   Epic sadface: Username and password do not match any user in this service
+    Error Message Should Be Displayed  ${expected_message}
 
 Correct Username And Password With Different Case
     Enter Credentials    standard_user    SECRET_SAUCE
-    Wait Until Element Is Visible    ${LOCATOR_ERROR_MESSAGE}   timeout=5s
-    Element Text Should Be    ${LOCATOR_ERROR_MESSAGE}   Epic sadface: Username and password do not match any user in this service
+    Error Message Should Be Displayed     ${expected_message}
 
 Both Username And Password With Wrong Case
     Enter Credentials    STANDARD_USER    SECRET_SAUCE
-    Wait Until Element Is Visible    ${LOCATOR_ERROR_MESSAGE}   timeout=5s
-    Element Text Should Be    ${LOCATOR_ERROR_MESSAGE}   Epic sadface: Username and password do not match any user in this service
+    Error Message Should Be Displayed    ${expected_message}
 
 Username with leading/trailing spaces and Correct Password
     Enter Credentials   ${SPACE}standard_user${SPACE}   secret_sauce
-    Wait Until Element Is Visible    ${LOCATOR_ERROR_MESSAGE}   timeout=5s
-    Element Text Should Be    ${LOCATOR_ERROR_MESSAGE}   Epic sadface: Username and password do not match any user in this service
+    Error Message Should Be Displayed   ${expected_message}
 
 Correct Username and Password with leading/trailing spaces
     Enter Credentials   standard_user   ${SPACE}secret_sauce${SPACE}
-    Wait Until Element Is Visible    ${LOCATOR_ERROR_MESSAGE}   timeout=5s
-    Element Text Should Be    ${LOCATOR_ERROR_MESSAGE}   Epic sadface: Username and password do not match any user in this service
+    Error Message Should Be Displayed    ${expected_message}
