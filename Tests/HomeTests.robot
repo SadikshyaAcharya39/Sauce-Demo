@@ -6,13 +6,13 @@ Test Setup    Logging In
 Test Teardown    Close Browser
 
 *** Test Cases ***
-Add Product To Cart From Home Page
+Add Product To Cart 
     Add Product To Cart
     Cart Badge Should Show    1
     Click Element   ${LOCATOR_SHOPPING_CART_LINK}
     Verify Cart Has Items
 
-Add Products To Cart From Home Page
+Add Products To Cart 
     Add Products To Cart
     Cart Badge Should Show    2
     Click Element   ${LOCATOR_SHOPPING_CART_LINK}
