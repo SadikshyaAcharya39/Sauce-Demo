@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-08T11:09:09.546492" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginTests" source="C:\Users\acer\PycharmProjects\SauceDemo\Tests\LoginTests.robot">
+<test id="s1-t1" name="Correct Username and Password with leading/trailing spaces" line="64">
+<kw name="Open Login Page" owner="LoginPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-08T11:09:09.865947" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${LOGIN_PAGE_URL}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-08T11:09:09.865757" elapsed="6.692876"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-08T11:09:16.559254" elapsed="0.343456"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-08T11:09:16.904838" level="INFO">Clicking element '//input[@id='user-name']'.</msg>
+<arg>${LOCATOR_USERNAME}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T11:09:16.903017" elapsed="0.300807"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-08T11:09:17.204699" level="INFO">Clicking element '//input[@id='password']'.</msg>
+<arg>${LOCATOR_PASSWORD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T11:09:17.204122" elapsed="0.221146"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-08T11:09:17.425865" level="INFO">Clicking element '//input[@id='login-button']'.</msg>
+<arg>${LOCATOR_LOGIN_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T11:09:17.425552" elapsed="0.243843"/>
+</kw>
+<status status="PASS" start="2025-05-08T11:09:09.865235" elapsed="7.804432"/>
+</kw>
+<kw name="Enter Credentials" owner="LoginPage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOCATOR_USERNAME}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-08T11:09:17.671540" elapsed="0.025033"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOCATOR_PASSWORD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-08T11:09:17.696972" elapsed="0.019786"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-08T11:09:17.717844" level="INFO">Typing text 'standard_user' into text field '//input[@id='user-name']'.</msg>
+<arg>${LOCATOR_USERNAME}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T11:09:17.717215" elapsed="0.041004"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-08T11:09:17.758983" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg time="2025-05-08T11:09:17.765403" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${LOCATOR_PASSWORD}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T11:09:17.758477" elapsed="0.028051"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-08T11:09:17.786870" level="INFO">Clicking button '//input[@id='login-button']'.</msg>
+<arg>${LOCATOR_LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-08T11:09:17.786685" elapsed="0.218507"/>
+</kw>
+<arg>standard_user</arg>
+<arg>${SPACE}secret_sauce${SPACE}</arg>
+<status status="PASS" start="2025-05-08T11:09:17.670697" elapsed="0.334782"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOCATOR_ERROR_MESSAGE}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-08T11:09:18.006220" elapsed="0.016377"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-08T11:09:18.023171" level="INFO">Verifying element '//h3[@data-test="error"]' contains exact text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<arg>${LOCATOR_ERROR_MESSAGE}</arg>
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-08T11:09:18.022975" elapsed="0.011624"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-08T11:09:18.035487" elapsed="2.819576"/>
+</kw>
+<status status="PASS" start="2025-05-08T11:09:09.864586" elapsed="10.991119"/>
+</test>
+<status status="PASS" start="2025-05-08T11:09:09.547595" elapsed="11.310460"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="LoginTests" id="s1" pass="1" fail="0" skip="0">LoginTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
