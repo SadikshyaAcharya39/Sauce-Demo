@@ -1,17 +1,17 @@
-1746679370209	geckodriver	INFO	Listening on 127.0.0.1:51414
-1746679373353	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51415" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\acer\\AppData\\Local\\Temp\\rust_mozprofileV12PI6"
+1746695745414	geckodriver	INFO	Listening on 127.0.0.1:61632
+1746695748519	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61633" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\acer\\AppData\\Local\\Temp\\rust_mozprofile5QCTyT"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 Dynamically enable window occlusion 0
-1746679373776	Marionette	INFO	Marionette enabled
-1746679373905	Marionette	INFO	Listening on port 51430
-WebDriver BiDi listening on ws://127.0.0.1:51415
-Read port: 51430
-1746679374041	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1746695748771	Marionette	INFO	Marionette enabled
+1746695748858	Marionette	INFO	Listening on port 61645
+WebDriver BiDi listening on ws://127.0.0.1:61633
+Read port: 61645
+1746695749009	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
-1746679383362	Marionette	INFO	Stopped listening on port 51430
+1746695753727	Marionette	INFO	Stopped listening on port 61645
 Dynamically enable window occlusion 1
 JavaScript warning: https://www.saucedemo.com/static/js/2.84a5cbf3.chunk.js, line 2: Script terminated by timeout at:
 get@https://www.saucedemo.com/static/js/2.84a5cbf3.chunk.js:2:123427

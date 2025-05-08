@@ -1,19 +1,19 @@
-1746679535530	geckodriver	INFO	Listening on 127.0.0.1:51598
-1746679538608	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51599" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\acer\\AppData\\Local\\Temp\\rust_mozprofilebYszHJ"
+1746696166895	geckodriver	INFO	Listening on 127.0.0.1:61961
+1746696169999	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61962" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\acer\\AppData\\Local\\Temp\\rust_mozprofilevyOiAA"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 Dynamically enable window occlusion 0
-1746679538873	Marionette	INFO	Marionette enabled
-1746679538967	Marionette	INFO	Listening on port 51608
-WebDriver BiDi listening on ws://127.0.0.1:51599
-Read port: 51608
-1746679539085	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1746696170548	Marionette	INFO	Marionette enabled
+1746696170736	Marionette	INFO	Listening on port 61971
+WebDriver BiDi listening on ws://127.0.0.1:61962
+Read port: 61971
+1746696170959	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+1746696176639	Marionette	INFO	Stopped listening on port 61971
+Dynamically enable window occlusion 1
 JavaScript warning: https://www.saucedemo.com/static/js/2.84a5cbf3.chunk.js, line 2: Script terminated by timeout at:
 get@https://www.saucedemo.com/static/js/2.84a5cbf3.chunk.js:2:123427
 r/936/n/7429/value/<@https://www.saucedemo.com/static/js/2.84a5cbf3.chunk.js:2:56726
 
-1746679548985	Marionette	INFO	Stopped listening on port 51608
-Dynamically enable window occlusion 1

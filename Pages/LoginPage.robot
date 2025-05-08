@@ -1,14 +1,12 @@
 *** Settings ***
 Library    SeleniumLibrary
 
-
 *** Variables ***
 ${LOGIN_PAGE_URL}         https://www.saucedemo.com/
 ${LOCATOR_USERNAME}       //input[@id='user-name']
 ${LOCATOR_PASSWORD}       //input[@id='password']
 ${LOCATOR_LOGIN_BUTTON}   //input[@id='login-button']
 ${LOCATOR_ERROR_MESSAGE}  //h3[@data-test="error"]
-
 
 *** Keywords ***
 Open Login Page
