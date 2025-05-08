@@ -10,7 +10,7 @@ ${LOCATOR_SECOND_PRODUCT_ADD_TO_CART}    //button[@id="add-to-cart-sauce-labs-bi
 ${LOCATOR_SHOPPING_CART_LINK}            //a[@class='shopping_cart_link']
 ${LOCATOR_CART_ITEMS}                    //div[@class='cart_item']
 ${LOCATOR_CHECKOUT_BUTTON}               //button[normalize-space(text())='Checkout']
-${LOCATOR_CHECKOUT_INFO}                 //span[normalize-space(text())='Checkout: Your Information']                     //span[normalize-space(text())='Checkout: Your Information']
+${LOCATOR_CHECKOUT_INFO}                 //span[normalize-space(text())='Checkout: Your Information']                     
 ${LOCATOR_FIRST_NAME}                    //input[@id="first-name"]
 ${LOCATOR_LAST_NAME}                     //input[@id="last-name"]
 ${LOCATOR_ZIP_CODE}                      //input[@id="postal-code"]
