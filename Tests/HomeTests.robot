@@ -121,3 +121,12 @@ Verify Items Are Sorted High To Low By Price
     END
     ${sorted}=    Evaluate    sorted(${prices}, reverse=True)
     Should Be Equal    ${prices}    ${sorted}
+
+
+Verify clicking on Remove button removes cart badge
+    Click Button    ${LOCATOR_FIRST_PRODUCT_ADD_TO_CART}
+    Cart Badge Should Show    1
+    Click Button    ${LOCATOR_REMOVE_BUTTON}
+    Verify Cart Badge Disappears Or Shows Count   0
+
+

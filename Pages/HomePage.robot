@@ -69,3 +69,19 @@ Checkout Info
     Input Text    ${LOCATOR_LAST_NAME}    ${lastname}
     Input Text    ${LOCATOR_ZIP_CODE}     ${zipcode}
     
+Verify Cart Badge Disappears Or Shows Count
+    [Arguments]    ${expected_count}
+    ${badge_present}=    Run Keyword And Return Status    Element Should Be Visible    //span[@class="shopping_cart_badge"]
+
+    Run Keyword If    '${expected_count}' == '0' and not ${badge_present}
+    ...    Log    Cart badge disappeared as expected when count is 0
+
+    Run Keyword If    '${expected_count}' == '0' and ${badge_present}
+    ...    Fail    Expected cart badge to disappear, but it was still visible
+
+    Run Keyword If    '${expected_count}' != '0' and ${badge_present}
+    ...    Element Text Should Be    //span[@class="shopping_cart_badge"]    ${expected_count}
+
+    Run Keyword If    '${expected_count}' != '0' and not ${badge_present}
+    ...    Fail    Expected cart badge with count ${expected_count}, but it was not visible
+
